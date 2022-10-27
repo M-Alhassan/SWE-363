@@ -1,0 +1,110 @@
+body {
+    background-image: url("silverware.jpg");
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.screen-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1024px;
+    padding-inline: 10px;
+}
+
+.fish-list {
+    list-style-image: url("fish_icon_24.png");
+}
+
+hr {
+    width: 100%;
+    border-bottom: #f0f0f0;
+    border-style: solid;
+}
+
+h1 {
+    color: #a4a400;
+    background-color: #f0f0f0;
+    border: #a4a400;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 30px 170px;
+}
+
+h2 {
+    font-size: medium;
+    color: #73ad21;
+    background-color: #f0f0f0;
+    border: #73ad21;
+    border-style: solid;
+    border-radius: 30px;
+    padding: 15px 85px
+}
+
+a {
+    color: #73ad21;
+}
+
+.fishimage {
+    border-radius: 50%;
+    width: 300px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-color: #73ad21;
+}
+
+.grid-item {
+    border-right: #73ad21;
+    border-right-style: solid;
+    display: block;
+}
+
+.grid-item-no-border {
+    display: block;
+}
+
+.comment {
+    background: #ffffa8;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fishimage {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+    .grid {
+        column-count: 2;
+        column-gap: 40px;
+        column-rule-style: solid;
+        column-rule-color: #73ad21;
+    }
+    .fishimage {
+        width: 100%;
+    }
+}
