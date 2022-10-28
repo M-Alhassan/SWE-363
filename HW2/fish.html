@@ -10,7 +10,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fish-styles.css">
 </head>
 
 <body>
@@ -27,8 +27,8 @@
         <h2>INGREDIENTS</h2>
         <div class="container">
             <div class="grid">
-                <img class="fishimage" src="JumboFishFingers.jpg" alt="Jumbo fish fingers">
-                
+                <img class="custom-image" src="JumboFishFingers.jpg" alt="Jumbo fish fingers">
+
                 <ul>
                     <li class="fish-list">1 x 2 kg side of salmon, skin off, pin-boned, from sustainable sources</li>
                     <li class="fish-list">2 large fre-range eggs</li>
@@ -104,11 +104,11 @@
         <div class="container">
             <fieldset>
                 <legend>Enter a comment</legend>
-                <label for="name"> <b>Name:</b></label>
+                <label for="name"> <strong>Name:</strong></label>
                 <br>
                 <input type="text" class="name">
                 <br>
-                <label for="comment"><b>Comment:</b></label>
+                <label for="comment"><strong>Comment:</strong></label>
                 <br>
                 <textarea name="comments" cols="50" rows="5" placeholder="Enter your comment here..."></textarea>
                 <br>
@@ -126,11 +126,11 @@
             </div>
             <fieldset>
                 <legend>Personal Information</legend>
-                <label for="name2"><b>Name:</b></label>
+                <label for="name2"><strong>Name:</strong></label>
                 <input type="text" class="name2">
                 <br>
                 <br>
-                <label for="email"><b>Email:</b></label>
+                <label for="email"><strong>Email:</strong></label>
                 <input type="email" class="email" placeholder="xxxx@domain.com">
             </fieldset>
             <br>
@@ -144,7 +144,10 @@
                 <input type="radio">
             </fieldset>
             <br>
-            <button>Sign Up</button>
+            <form action="mailto:xxx@domain.com" method="get">
+                <button type="submit">Sign Up</button>
+            </form>
+
         </div>
 
         <hr>

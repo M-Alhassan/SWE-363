@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Segoe UI';
 }
 
 .screen-content {
@@ -48,7 +49,7 @@ a {
     color: #73ad21;
 }
 
-.fishimage {
+.custom-image {
     border-radius: 50%;
     width: 300px;
 }
@@ -82,6 +83,10 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+
+    h1 {
+        padding: 30px 70px;
+    }
     .grid {
         display: flex;
         flex-direction: column;
@@ -91,20 +96,23 @@ a {
         flex-direction: column;
         align-items: center;
     }
-    .fishimage {
+    .custom-image {
         width: 100%;
     }
     
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1023px) {
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    h1 {
+        padding: 30px 70px;
+    }
     .grid {
         column-count: 2;
         column-gap: 40px;
         column-rule-style: solid;
         column-rule-color: #73ad21;
     }
-    .fishimage {
+    .custom-image {
         width: 100%;
     }
 }
